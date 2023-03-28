@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Pricing.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/66562ef889.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Pricing</title>
+</head>
+<body>
+    <!-------------------------------Home Page----------------------------------> 
+<div class="bg-img">
+    <div class="smhead">
+        <div>
+            <a href="#">FAQs |</a>
+            <a href="#">Help |</a>
+            <a href="/LaundryWebsite/Contact/contact.html">Contact us |</a>
+        </div>
+        <img src="/LaundryWebsite/Index/images/fb-logo.png" alt="Facebook" >
+        <img src="/LaundryWebsite/Index/images/gmail-logo.png" alt="Gmail" >
+    </div>
+    <div class="navar"> 
+        <div class="logo">
+          <div class="hamburger">
+            <a href="#"><i class="fa-solid fa-bars fa-2xl"></i></a>
+            </div>
+            <div class="navigate">
+                <ul>
+                    <li><a href="/LaundryWebsite/Index/index.html" >Home</a></li>
+                    <li><a href="/LaundryWebsite/About/About.html">About</a></li>
+                    <li class="pricing"><a href="#" id="active">Pricing</a>
+                    </li>
+                    <li class="services"><a href="/LaundryWebsite/Services/Services.html">Services</a>
+                    </li>
+                    <li class="delivery"><a href="#">Pickup & Delivery<i class="fa-solid fa-caret-down"></i></a>
+                      <div class="deliveryOffer">
+                        <a href="/LaundryWebsite/Delivery/HomeDelivery.html">Home Delivery</a>
+                        <a href="/LaundryWebsite/Delivery/ApartmentDelivery.html">Apartment Delivery</a>
+                        <a href="/LaundryWebsite/Delivery/OfficeDelivery.html">Office Delivery</a>
+                      </div>
+                    </li>
+                    <li><a href="/LaundryWebsite/Login&registration/login.php" id="signIn"><i class="fa-solid fa-user"></i>Sign in</a></li>
+                </ul>
+            </div>  
+        </div>       
+    </div>
+<!-------------------------------Pricing----------------------------------> 
+<div class="container-sm container-ac">
+    <div class="aboutUs">
+        <span class="whoUs">
+            <h1>Pricing</h1>
+            <p>At our laundry shop, we strive to offer quality services without breaking the bank. Our pricing model is one-of-a-kind, and we are the only shop in Dasmarinas, Philippines to offer it. We charge only 75 pesos per kilo for a minimum of 4kgs. We guarantee that our prices are competitive with the current market. Additionally, we provide extra services like ironing and hangers, and we take extra care with delicate garments. There are no hidden fees or charges.</p>
+        </span>
+        <div class="icons animate__animated animate__bounceInUp">
+            <span>
+                <img src="/LaundryWebsite/Index/images/shirt.png" id="png1" alt="Basic Items">
+                
+            </span>
+            <span> 
+                <img src="/LaundryWebsite/Index/images/hanger.png" id="png2" alt="Basic Items">
+                
+            </span>
+            <span>
+                <img src="/LaundryWebsite/Index/images//blazer.png" id="png3" alt="Basic Items">
+                
+            </span>
+            
+        </div>
+    </div>
+  </div>  
+</div> 
+<div class="conPriceList">
+   <div class="container-sm priceList">
+    <span class="list">
+        <h1>Price List</h1>
+    </span>
+      <div class="iconsPrice" id="iprice">
+          <button class="btn" onclick="showBasic()">
+          <img src="/LaundryWebsite/Index/images/shirt.png"  alt="Basic Items">
+          <p>Basic Items</p>
+          </button> 
+          <button class="btn" onclick="showDry()"> 
+          <img src="/LaundryWebsite/Index/images/hanger.png" alt="Basic Items">
+          <p>Dry Cleaning</p>
+          </button>
+          <button class="btn" onclick="showSpecial()">
+            <img src="/LaundryWebsite/Index/images/blazer.png" alt="Basic Items">
+            <p id="special">Special Items</p>
+          </button>
+    </div>
+    <div class="dropdownList animate__animated animate__fadeIn" id="basic">
+      <h2>BASIC ITEMS</h2>
+    <button class="dropdown-btn" onclick="toggleIcon(this)">Hand Wash
+      <i class="fa-solid fa-plus"></i>
+      </button>
+      <div class="dropdown-container">
+        <span>
+          <p>Hand Wash Hang Dry & Fold(max 4kg)</p>
+          <p>Php 75/per kg</p>
+        </span>
+        <span>
+          <p>Hand Wash Hang Dry & Fold (5-7kg)</p>
+          <p>Php 350</p>
+        </span>
+        <span>
+          <p>Hand Wash Hang Dry & Fold (8-9kg)</p>
+          <p>Php 500</p>
+        </span>
+        <span>
+          <p>Hand Wash Hang Dry & Fold (max 10kg)</p>
+          <p>Php 600</p>
+        </span>
+      </div>
+      <button class="dropdown-btn" onclick="toggleIcon(this)">Press Iron
+        <i class="fa-solid fa-plus"></i>
+      </button>
+      <div class="dropdown-container">
+        <span>
+          <p>Press Iron</p>
+          <p>Php 150/per kilo</p>
+        </span>
+      </div>
+      <button class="dropdown-btn" onclick="toggleIcon(this)">Wash dry & Fold
+        <i class="fa-solid fa-plus"></i>
+      </button>
+      <div class="dropdown-container">
+        <span>
+          <p>Hand Wash Hang Dry & Fold (max 4kg)</p>
+          <p>Php 50/per kg</p>
+        </span>
+        <span>
+          <p>Hand Wash Hang Dry & Fold (5-7kg)</p>
+          <p>Php 300</p>
+        </span>
+        <span>
+          <p>Hand Wash Hang Dry & Fold (8-9kg)</p>
+          <p>Php 400</p>
+        </span>
+        <span>
+          <p>Hand Wash Hang Dry & Fold (10kg)</p>
+          <p>Php 500</p>
+        </span>
+      </div>
+    </div>
+
+    <div class="dropdownList animate__animated animate__fadeIn" id="dry">
+      <h2>DRY CLEANING</h2>
+      <button class="dropdown-btn" onclick="toggleIcon(this)">Dry Cleaning Price
+        <i class="fa-solid fa-plus"></i>
+        </button>
+        <div class="dropdown-container">
+          <span>
+            <p>Dry Cleaning (max 4kg)</p>
+            <p>Php 100/per kg</p>
+          </span>
+          <span>
+            <p>Dry Cleaning (5-7kg)</p>
+            <p>Php 600</p>
+          </span>
+          <span>
+            <p>Dry Cleaning (8-9kg)</p>
+            <p>Php 800</p>
+          </span>
+          <span>
+            <p>Dry Cleaning (max 10kg)</p>
+            <p>Php 1000</p>
+          </span>
+        </div>
+   </div>   
+
+   <div class="dropdownList animate__animated animate__fadeIn" id="special1">
+    <h2>SPECIAL ITEMS</h2>
+    <button class="dropdown-btn" onclick="toggleIcon(this)">Bags
+      <i class="fa-solid fa-plus"></i>
+      </button>
+      <div class="dropdown-container">
+        <span>
+          <p>Bags</p>
+          <p>Php 100/pc</p>
+        </span>
+      </div>
+      <button class="dropdown-btn" onclick="toggleIcon(this)">barong
+        <i class="fa-solid fa-plus"></i>
+      </button>
+      <div class="dropdown-container">
+        <span>
+          <p>Barong</p>
+          <p>Php 150/pc</p>
+        </span>
+      </div>
+      <button class="dropdown-btn" onclick="toggleIcon(this)">blanket
+        <i class="fa-solid fa-plus"></i>
+      </button>
+      <div class="dropdown-container">
+        <span>
+          <p>Blanket</p>
+          <p>Php 200/pc</p>
+        </span>
+      </div>
+      <button class="dropdown-btn" onclick="toggleIcon(this)">Bedsheets
+        <i class="fa-solid fa-plus"></i>
+      </button>
+      <div class="dropdown-container">
+        <span>
+          <p>Bed Sheets / Towels – Colored</p>
+          <p>Php 250/pc</p>
+        </span>
+      </div>
+      <button class="dropdown-btn" onclick="toggleIcon(this)">comforter
+        <i class="fa-solid fa-plus"></i>
+      </button>
+      <div class="dropdown-container">
+        <span>
+          <p>King Size All size</p>
+          <p>Php 350/pc</p>
+        </span>
+      </div>
+      <button class="dropdown-btn" onclick="toggleIcon(this)">jackets/sweaters
+        <i class="fa-solid fa-plus"></i>
+      </button>
+      <div class="dropdown-container">
+        <span>
+          <p>Jackets</p>
+          <p>Php 50/pc</p>
+        </span>
+      </div>
+      <button class="dropdown-btn" onclick="toggleIcon(this)">shoes/slippers/caps
+        <i class="fa-solid fa-plus"></i>
+      </button>
+      <div class="dropdown-container">
+        <span>
+          <p>Rubber Shoes</p>
+          <p>Php 150/pair</p>
+        </span>
+        <span>
+          <p>Cap</p>
+          <p>Php 150/pc</p>
+        </span>
+        <span>
+          <p>Sneakers</p>
+          <p>Php 150/pair</p>
+        </span>
+        <span>
+          <p>Slippers</p>
+          <p>Php 150/pair</p>
+        </span>
+      </div>
+      <button class="dropdown-btn" onclick="toggleIcon(this)">stuffed toys
+        <i class="fa-solid fa-plus"></i>
+      </button>
+      <div class="dropdown-container">
+        <span>
+          <p>Stuffed Toy all size</p>
+          <p>Php 300/pc</p>
+        </span>
+      </div>
+ </div>   
+</div> 
+</div>
+<!-------------------------------Footer---------------------------------->
+<div class="footer">
+  <div class="container-sm">
+    <div class="container-fluid mt-3">
+      <div class="row">
+        <div class="col-sm-4 p-3" id="washup">
+          <img src="/LaundryWebsite/Index/images/logo.png" alt="LaunDryver">
+          <h5><i class="fa-solid fa-shirt" style="padding-right: 10px;"></i>WASH UP NOW!</h5>
+          <p><i class="fa-solid fa-phone" style="padding-right: 10px;"></i>0943545657</p>
+          <p><i class="fa-solid fa-location-dot" style="padding-right: 10px;"></i>Dasmariñas city, Cavite</p>
+          <p><i class="fa-regular fa-clock" style="padding-right: 10px;"></i>Open 24 Hours</p>
+        </div>
+        <div class="col-sm-4 p-3">
+          <div class="servicefooter">
+          <h5>Services</h5>
+          <p>Sort Clothes</p>
+          <p>Fold Clothes</p>
+          <p>Wash and Dry</p>
+          <p>Dry Cleaning</p>
+          <p>Pickup and Delivery</p>
+        </div>
+        </div>
+        <div class="col-sm-4 p-3">
+          <h5><i class="fa-solid fa-phone" style="padding-right: 10px;"></i>Contact us</h5>
+            <p>kenjerod@gmail.com</p>
+            <p>kenjerodgutierrez</p>
+            <p><i class="fa-solid fa-phone" style="padding-right: 10px;"></i>0943545657</p>
+            <div class="contactfooter">
+            <img src="/LaundryWebsite/Index/images/fb-logo.png" alt="LaunDryver">
+            <img src="/LaundryWebsite/Index/images/gmail-logo.png" alt="LaunDryver">
+            </div>
+            <h6 class="term">Terms and Conditon</h6>
+            <h6>Privacy Policy</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="Pricing.js"></script> 
+<script>
+  AOS.init();
+</script>

@@ -1,0 +1,242 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.goBack a 
+{   
+    text-decoration: none;
+    color: #0F8589;
+    font-size: 20px;
+    text-transform: uppercase;
+    position: absolute;
+    padding: 10px 30px 10px 30px;
+    background-color: wheat;
+    left: 30px;
+    top: 20px;
+    border-radius: 5px;
+    transition: .4s ease-in-out;
+}
+
+.goBack a:hover
+{
+    background-color: #46d6db;
+    color: white;
+}
+.goBack i
+{
+    padding-right: 10px;
+}
+.responsiveLogin
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Montserrat', sans-serif;
+	height: 100vh;
+    background: linear-gradient(to bottom, #0F8589 0%, wheat 150%);
+    display: none;
+}
+@media screen and (max-width: 1120px)
+{
+    .loginRegistration
+    {
+        display: none;
+    }
+    .responsiveLogin
+    {
+        display: block;
+    }
+    .resForm
+    {
+        height: 540px;
+        width: 400px;
+        background-color: rgba(255,255,255,0.13);
+        position: absolute;
+        transform: translate(-50%,-50%);
+        top: 20%;
+        left: 35%;
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+        border: 2px solid rgba(255,255,255,0.1);
+        box-shadow: 0 0 40px rgba(8,7,16,0.6);
+        padding: 30px 35px;
+    }
+    .resForm *
+    {
+        font-family: 'Montserrat',sans-serif;
+        color: #ffffff;
+        letter-spacing: 0.5px;
+        outline: none;
+        border: none;
+    }
+    .Sup 
+    {   
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+    .Sup a:hover
+    {
+        color: #0adce3;
+    }
+    .resForm h3
+    {
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 42px;
+        text-align: center;
+        color:  #e89e3e;
+        text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    .resForm label
+    {
+        display: block;
+        margin-top: 10px;
+        font-size: 16px;
+        font-weight: 500;
+        color: #46d6db ;
+        text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    .resForm input
+    {
+        display: block;
+        height: 50px;
+        width: 100%;
+        background-color: rgba(242, 156, 7, 0.253);
+        border-radius: 3px;
+        padding: 0 10px;
+        margin-top: 8px;
+        font-size: 14px;
+        font-weight: 300;
+    }
+    .resForm label
+    {
+        text-align: center;
+    }
+    .Sup
+    {
+        text-align: center;
+    }
+    ::placeholder
+    {
+        color: white;
+    }
+    .resForm .button button
+    {
+        margin-top: 30px;
+        width: 100%;
+        background-color:  #0F8589;
+        color: #ffffff;
+        padding: 10px 0;
+        font-size: 18px;
+        font-weight: 600;
+        border-radius: 5px;
+        cursor: pointer;
+        padding: 10px 40px;
+        transition: .4s ease-in-out;
+    }
+    .resForm .button button:hover
+    {
+        background-color: rgb(20, 164, 164);
+    }
+    .social
+    {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }   
+    .social div
+    {
+        background: red;
+        width: 150px;
+        border-radius: 3px;
+        padding: 10px 10px 10px 5px;
+        background-color: rgba(255,255,255,0.27);
+        color: #eaf0fb;
+        text-align: center;
+        background-color: rgba(255, 168, 7, 0.596);
+        transition: .4s ease-in-out;
+    }
+    .social div:hover
+    {
+        background-color: rgba(239, 185, 99, 0.47);
+    }
+    .social .fb
+    {
+        margin-left: 25px;
+    }
+    .social i
+    {
+        margin-right: 4px;
+    }
+}
+@media screen and (max-width: 1025px)
+{
+    .resForm
+    {
+        top: 10%;
+        left: 31%;
+    }
+}
+@media screen and (max-width: 913px)
+{
+    .resForm
+    {
+        top: 25%;
+        left: 21%;
+        width: 550px;
+        height: 620px;
+    }
+}
+@media screen and (max-width: 821px)
+{
+    .resForm
+    {
+        top: 25%;
+        left: 18%;
+    }
+}
+@media screen and (max-width: 769px)
+{
+    .resForm
+    {
+        top: 23%;
+        left: 15%;
+    }
+}
+@media screen and (max-width: 541px)
+{
+    .resForm
+    {
+        top: 14%;
+        left: 0;
+        width: 100%;
+        height: 600px;
+    }
+}
+@media screen and (max-width: 415px)
+{
+    .resForm
+    {
+        top: 20%;
+        height: 560px;
+    }
+}
+@media screen and (max-width: 376px)
+{
+    .resForm
+    {
+        top: 16%;
+        height: 540px;
+    }
+}
+@media screen and (max-width: 361px)
+{
+    .resForm
+    {
+        top: 16%;
+        height: 590px;
+    }
+}

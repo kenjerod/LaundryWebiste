@@ -1,0 +1,1213 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body
+{
+    background: rgb(235, 235, 235);
+}
+.bg
+{
+    height: auto;
+}
+.nav
+{
+    background: #217f81;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.logo img
+{
+    width: 30%;
+    margin-left: 50px;
+    transition: .3s ease-in;
+}
+.logo img:hover
+{
+    filter: drop-shadow(2px 2px 2px #222);
+}
+.category
+{
+    width: 60%;
+}
+.flexCategory
+{
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+.flexCategory p
+{
+    margin-bottom: 0;
+    font-size: 18px;
+    padding-right: 30px;
+    height: 100%;
+    padding-top: 40px;
+    padding-left: 30px;
+    color: rgba(255, 255, 255, 0.584);
+    transition: .3s ease-in-out ;
+}
+.flexCategory p:hover
+{
+    color: rgb(254, 254, 254);
+    border-bottom: 8px solid #f7dcc6;
+}
+#log
+{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.584);
+    padding-top: 50px;
+    height: 110%;
+}
+.deliveryOffer
+{
+    display: none;
+    position: absolute;
+    background-color: wheat;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+#logout
+{
+    width: 100%;
+    height: 50px;
+    margin-left: 0;
+    text-align: left;
+    background-color: wheat;
+    color: rgba(0, 0, 0, 0.598);
+    border-radius: 0;
+    transition: .3s ease-in-out ;
+}
+#logout:hover
+{
+    background-color:#217f81;
+    color: #fff;  
+}
+.deliveryOffer a 
+{
+    float: none;
+    color: rgba(0, 0, 0, 0.598);
+    padding: 12px 20px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    transition: .3s ease-in-out;
+}
+.deliveryOffer a:hover
+{
+    background-color:#217f81;
+    color: #fff;
+}
+#log:hover 
+{
+    color: #fff;
+}
+#log:hover .deliveryOffer
+{
+    display: block;
+}
+.deliveryOffer
+{
+    right: 330px;
+    top: 100px;
+    animation: growDown3 .4s ease-in-out;
+    transform-origin: top center;
+}
+
+@keyframes growDown3
+{
+        0% {transform: scaleY(0)}
+        80% {transform: scaleY(1.1)}
+        100% {transform: scaleY(1)}
+     
+}
+.flexCategory img
+{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+}
+.fa-sort-down
+{
+   margin-left: 10px;
+}
+.flexCategory input
+{
+    margin-left: 50px;
+    width: 25%;
+    height: 40px;
+    padding-left: 20px;
+    border-radius: 25px;
+    border: none;
+}
+.flexCategory .fa-magnifying-glass
+{
+    opacity: .7;
+    position: relative;
+    right: 30px;
+}
+.flexCategory .active
+{
+    color: rgb(255, 255, 255);
+    border-bottom: 8px solid #f7dcc6;
+}
+
+.boook
+{
+    display: flex;
+    align-items: center;
+    padding: 10px 0 0 200px;
+    width: 100%;
+    height: 120px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #fff;
+}
+.boook img 
+{
+    width: 15%;
+    margin-right: 20px;
+    border-right: 2px solid #217f81;
+    padding-right: 10px;
+}
+.boook h1 
+{
+    color: rgb(235, 158, 14);
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.container-v
+{
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-top: 100px;
+}
+.NxjxYL
+{
+    height: 3px;
+    width: 100%;
+    background-position-x: -30px;
+    background-size: 116px 3px;
+    background-image: repeating-linear-gradient(45deg,#166465 0,#166465 33px,transparent 0,transparent 41px,#ef9835 0,#ef9835 74px,transparent 0,transparent 82px);
+}
+.address
+{
+    width: 100%;
+    height: auto;
+    background: #fff;
+    padding: 25px 50px 0;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.address p 
+{
+    margin-bottom: 25px;
+    color: #ef9835;
+}
+.address p i
+{
+    margin-right: 5px;
+}
+.addr
+{
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+.addr p 
+{
+   
+    color: black;
+    font-weight: bold;
+    height: 50px;
+    margin-bottom: 0;
+    padding: 5px;
+}
+.num p
+{
+    width: 200px;
+}
+#change button
+{
+    background: wheat;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: .3s ease-in-out;
+    margin-bottom: 20px;
+}
+#change button:hover
+{
+    background: rgba(245, 222, 179, 0.58);
+    color: rgb(8, 95, 72);
+}
+/*------------form----*/
+.formContainer
+{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba( 187, 183, 183, 0.5 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 1px );
+    -webkit-backdrop-filter: blur( 1px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    top: 0;
+    display: none;
+}
+.formAddress
+{
+    border-radius: 10px;
+    max-width: 600px;
+    height: auto;
+    background-color: #fff;
+    margin: 0px auto;
+    margin-top: 120px;
+    border-radius: 8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.myAddressHead 
+{
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid rgb(199, 199, 199);
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+    padding-top: 25px;
+}
+.myAddressHead h5
+{
+   margin-left: 50px;
+   font-weight: 600;
+   color: rgb(235, 158, 14);
+}
+.flexEdit
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+}
+.flexEdit .cNumber
+{
+    margin-right: 50px;
+   
+}
+.flexEdit p
+{
+   font-size: 18px;
+}
+.edit
+{
+    padding-left: 30px;
+    color: blue;
+}
+.edit p
+{
+    margin-top: 20px;
+    font-size: 15px;   
+    font-weight: 600;
+}
+.edit p:hover
+{
+    cursor: pointer;
+    color: rgba(0, 0, 255, 0.598);
+}
+.dd
+{ 
+    display: flex;
+    gap: 5rem;
+    justify-content: space-between;
+}
+.defaultInfo
+{
+   padding-top: 30px;
+   padding-right: 20px;
+   border-right: 1px solid;
+
+}
+.cancelButton
+{
+    display: flex;
+    width: 100%;
+    height: 70px;
+
+    gap: 2rem;
+    justify-content: right;
+    align-items: center;
+    padding-right: 20px;
+    border-top: 1px solid rgb(199, 199, 199);
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+.cancelButton button
+{
+    padding: 10px 20px;
+    height: 50px;
+    background-color: rgb(237, 168, 40);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    transition: .3s ease;
+}
+.cancelButton button:hover
+{
+    background-color: rgba(237, 168, 40, 0.749);
+    color: black;
+}
+#add:disabled
+{
+    background-color: rgba(237, 168, 40, 0.749);
+    color: white;
+    cursor: not-allowed;
+}
+.formCustomerAddress
+{
+    max-width: 40%;    
+    margin: 0px auto;
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    border-radius: 5px;
+    display: none;
+    margin-top: 80px;
+}
+.CustomerAddress
+{
+    padding-top: 30px; 
+    
+}
+.CustomerAddress h5
+{
+    margin-left: 50px;
+    font-weight: 600;
+    color: rgb(235, 158, 14);
+    margin-bottom: 30px;
+}
+.ss
+{
+    display: flex;
+    flex-direction: column;
+}
+.ss input
+{
+    width: 500px;
+    margin: 0px auto;
+    height: 50px;
+    padding-left: 20px;
+    border-radius: 8px;
+    border-color: rgba(183, 183, 183, 0.164);
+    margin-bottom: 20px;
+}
+.ss input::placeholder
+{
+    color: rgba(0, 0, 0, 0.397);
+}
+.ss input:focus
+{
+    outline: 1px solid rgba(83, 83, 83, 0.614);
+    transition: outline .3s ease-in;
+}
+.ss input:active
+{
+    outline: 1px solid rgba(237, 237, 237, 0.468);
+}
+.ss button
+{
+    margin: 40px 50px 40px;
+    height: 50px;
+    background-color: rgb(237, 168, 40);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: .3s ease-in-out;
+}
+.ss button:hover
+{
+    background-color: rgba(237, 168, 40, 0.749);
+    color: black;
+}
+.cancelButton2
+{
+    display: flex;
+    width: 100%;
+    height: 70px;
+    
+    gap: 2rem;
+    justify-content: right;
+    align-items: center;
+    padding-right: 20px;
+}
+.cancelButton2 button
+{
+    padding: 10px 20px;
+    height: 50px;
+    background-color: rgb(237, 168, 40);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    transition: .3s ease;
+}
+.cancelButton2 button:hover
+{
+    background-color: rgba(237, 168, 40, 0.749);
+    color: black;
+}
+/*----edit address-----*/
+.formCustomerAddressEdit
+        {
+            max-width: 40%;    
+            margin: 0px auto;
+            background-color: rgb(255, 255, 255);
+            height: auto;
+            border-radius: 5px;
+            display: none;
+            margin-top: 80px;
+        }
+        .CustomerAddressEdit
+        {
+            padding-top: 30px; 
+        }
+        .CustomerAddressEdit h5
+        {
+            padding-top: 30px; 
+            margin-left: 50px;
+            font-weight: 600;
+            color: rgb(235, 158, 14);
+            margin-bottom: 30px;
+        }
+        .ssEdit
+        {
+            display: flex;
+            flex-direction: column;
+        }
+        .ssEdit input
+        {
+            width: 500px;
+            margin: 0px auto;
+            height: 50px;
+            padding-left: 20px;
+            border-radius: 8px;
+            border-color: rgba(183, 183, 183, 0.164);
+            margin-bottom: 20px;
+        }
+        .ssEdit input::placeholder
+        {
+            color: rgba(0, 0, 0, 0.397);
+        }
+        .ssEdit input:active
+        {
+            color: rgba(0, 0, 0, 0.397);
+        }
+        .ssEdit button
+        {
+            margin: 40px 50px 40px;
+            height: 50px;
+            background-color: rgb(237, 168, 40);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            transition: .3s ease-in-out;
+        }
+        .ssEdit button:hover
+        {
+            background-color: rgba(237, 168, 40, 0.749);
+            color: black;
+        }
+        .cancelButton2Edit
+        {
+            display: flex;
+            width: 100%;
+            height: 70px;
+            gap: 2rem;
+            justify-content: right;
+            align-items: center;
+            padding-right: 20px;
+        }
+        .cancelButton2Edit button
+        {
+            padding: 10px 20px;
+            height: 50px;
+            background-color: rgb(237, 168, 40);
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            transition: .3s ease;
+        }
+        .cancelButton2Edit button:hover
+        {
+            background-color: rgba(237, 168, 40, 0.749);
+            color: black;
+        }
+/*----Laundry PRoducs-----*/
+.typeContainer
+    {
+        width: 100%;
+     
+        padding-bottom: 5px;
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+    .productCleaning
+    {
+        width: 100%;
+        height: auto;
+        background: #fff;
+        padding: 25px 50px 0;
+        border-bottom: 1px dotted rgba(0, 0, 0, 0.422);
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        margin-bottom: 100px;
+    }
+    .productCleaning .bsp
+    {
+        padding-left: 50px;
+    }
+    .cost
+    {
+        display: flex;
+        justify-content: right;
+    }
+    .costFlex
+    {
+        display: flex;
+        gap: 6.5rem;
+        justify-content: space-between;
+    }
+    .costFlex input
+    {
+       width: 45px;
+       text-align: center;
+       border: none;
+       background-color: #fff;
+    }
+    .costFlex #hand
+    {
+       width: 200px;
+    }
+    .costFlex1
+    {
+        display: flex;
+        gap: 5rem;
+        justify-content: space-between;
+    }
+    .costFlex1 input
+    {
+        width: 45px;
+        text-align: center;
+        border: none;
+        background-color: #fff;
+    }
+    #typeClean
+    {
+        background: wheat;
+        border: none;
+        padding: 10px;
+        font-weight: bold;
+        border-radius: 10px;
+        transition: .3s ease-in-out;
+    }
+    #typeClean:hover
+    {
+        background: rgba(245, 222, 179, 0.58);
+        color: rgb(8, 95, 72);
+        cursor: pointer;
+    }
+    .typeCleaning
+    {
+      
+        width: 100%;
+    }
+   
+    
+    .typeCleaning span p
+    {
+        font-weight: 200;
+        color: rgba(0, 0, 0, 0.566);
+    }
+   
+    .typeCleaning h5
+    {
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    #subtotal
+    {
+        margin-left: 250px;
+    }
+    #subtotalp
+    {
+        margin-left: 170px;
+        margin-right: 10px;
+    }
+
+    #subtotal1
+    {
+        margin-left: 200px;
+        margin-right: 10px;
+    }
+    #subtotal2
+    {
+        margin-right: 10px;
+    }
+    .typeCleaning1 
+    {
+        margin-left: 620px;
+    }
+    .typeCleaning1 span p
+    {
+        font-weight: 200;
+        color: rgba(0, 0, 0, 0.566);
+    }
+
+    .typeCleaning2 
+    {
+        margin-left: 390px;
+    }
+    .typeCleaning2 span p
+    {
+        font-weight: 200;
+        color: rgba(0, 0, 0, 0.566);
+    }
+    
+    .total
+    {
+        
+        width: 100%;
+        padding: 30px 60px;
+    }
+    .total p
+    {
+        margin-bottom: 0;
+       text-align: center;
+    }
+   
+    
+    .formContainerProducts
+    {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: rgba( 187, 183, 183, 0.5 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 1px );
+        -webkit-backdrop-filter: blur( 1px );
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        top: 0;
+        display: none;
+        z-index: 2;
+    }
+    .formProducts
+    {
+        border-radius: 10px;
+        max-width: 1200px;
+        height: auto;
+        background-color: #fff;
+        margin: 0px auto;
+        margin-top: 5px;
+        border-radius: 8px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    }
+    .myProductsHead
+    {
+        width: 100%;
+        height: 70px;
+        border-bottom: 1px solid rgb(199, 199, 199);
+        box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+        padding-top: 25px;
+    }
+    .myProductsHead h5
+    {
+        margin-left: 50px;
+        font-weight: 600;
+        color: rgb(235, 158, 14);
+    }
+    .Items
+    {
+        height: auto; 
+        padding: 30px 40px; 
+    
+    }
+    .flexEdit1
+    {
+        display: flex;
+        justify-content: space-between; 
+        margin-bottom: 10px;
+    }
+    .flexEdit1 p
+    {
+        font-size: 17px;
+        font-weight: 600;
+    }
+    .typeKg
+    {
+        display: flex;
+        gap: 4rem;
+    }
+    .typeKg .kilo
+    {
+        padding-right: 0;
+    }
+    #costPrice
+    {
+        width: 40px;
+        border: none;
+    }
+    .basicItems, .specialItems
+    {
+
+        justify-content: space-between;
+    }
+    .basicItems .bk
+    {
+        display: flex;
+        gap: 3rem;
+        margin-bottom: 10px;
+       
+        justify-content: flex-end;
+    }
+    
+    #select
+    {
+        text-align: center;
+    }
+    .specialItems .si 
+    {
+       display: flex;
+       justify-content: space-between;
+        gap: 2rem;
+    }
+    #specialPrice
+    {
+        width: 40px;
+        border: none;
+    }
+    #output
+    {
+       background-color: #217f8165;
+       margin-bottom: 20px;
+       height: auto;
+       text-align: center;
+    }
+    .specialItemsProducts
+    {
+        border-radius: 10px;
+        max-width: 400px;
+        height: auto;
+        background-color: #fff;
+        margin: 0px auto;
+        margin-top: 70px;
+        border-radius: 8px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        display: none;
+        transition: .3s ease-in-out;
+    }
+    .specialItemsHead
+    {
+        width: 100%;
+        height: 70px;
+        border-bottom: 1px solid rgb(199, 199, 199);
+        box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+        padding-top: 25px;
+    }
+    .specialItemsHead h5
+    {
+        font-weight: 600;
+        text-align: center;
+        color: rgb(235, 158, 14);
+    }
+    .specialPrice
+    {
+        height: 55%; 
+        padding: 30px 40px; 
+    }
+  
+    .specialItemsPriceFlex
+    {
+        display: flex;
+        gap: 2rem;
+
+    }
+    .cancelButtonSpecial
+    {
+        display: flex;
+        width: 100%;
+        height: 70px;
+        gap: 2rem;
+        justify-content: right;
+        align-items: center;
+        padding-right: 20px;
+        border-top: 1px solid rgb(199, 199, 199);
+        box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+    }
+    .cancelButtonSpecial button
+    {
+        padding: 10px 20px;
+        height: 50px;
+        background-color: rgb(237, 168, 40);
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        transition: .3s ease;
+    }
+    .cancelButtonSpecial button:hover
+    {
+        background-color: rgba(237, 168, 40, 0.749);
+        color: black;
+    }
+    .basicItems .basicType, .specialType
+    {
+        width: 230px;
+        height: 25px;
+        padding: 0 10px;
+        background-color: rgb(249, 231, 199);
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        border-radius: 10px;
+        border: none;
+        transition: .3s ease-in-out;
+    }
+    .basicItems .basicType:hover, .specialType:hover
+    {
+        cursor: pointer;
+        background-color: rgb(246, 222, 180);
+    }
+    .basicItems .basicType:focus
+    {
+        outline: none;
+    }
+    .basicItems #kg, #kg1
+    {
+        width: 50px;
+        height: 30px;
+        padding-left: 8px;
+        border-color: rgba(0, 0, 0, 0.178);
+    }
+    .pressIron 
+    {
+        display: flex;
+      justify-content: space-between;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .radio
+    {
+        display: flex;
+        gap: 5rem;
+    }
+#submitSpecial
+{
+    padding: 10px 20px;
+    height: 50px;
+    background-color: rgb(237, 168, 40);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    transition: .3s ease;
+}
+#submitSpecial:hover
+{
+    background-color: rgba(237, 168, 40, 0.749);
+    color: black;
+}
+
+#ironPrice
+{
+    width: 40px;
+    border: none;
+}
+    /* The container */
+.container {
+    display: block;
+    position: relative;
+    width: 200px;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .container .checkmark:after {
+       top: 6px;
+      left: 6px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: white;
+  }
+    .cancelButtonProducts
+    {
+        display: flex;
+        width: 100%;
+        height: 70px;
+        gap: 2rem;
+        justify-content: right;
+        align-items: center;
+        padding-right: 20px;
+        border-top: 1px solid rgb(199, 199, 199);
+        box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+    }
+    .cancelButtonProducts button
+    {
+        padding: 10px 20px;
+        height: 50px;
+        background-color: rgb(237, 168, 40);
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        transition: .3s ease;
+    }
+    .cancelButtonProducts button:hover
+    {
+        background-color: rgba(237, 168, 40, 0.749);
+        color: black;
+    }
+
+@media screen and (max-width: 1281px) 
+{
+    .formProducts
+    {
+        max-width: 1000px;
+    }
+}
+@media screen and (max-width: 1024px) 
+{
+    .formProducts
+    {
+        max-width: 900px;
+
+    }
+    .flexEdit1 p
+    {
+        font-size: 14px;
+    }
+   
+}
+    .payContainer
+{
+    width: 100%;
+    height: 250px;
+    padding-bottom: 20px;
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-top: 16px;
+    margin-bottom: 100px;
+}
+
+.paymentMethod #price
+{
+    margin-top: 10px;
+    float: right;
+}
+#price1
+{
+    width: 224px;
+    border: none;
+}
+#price2
+{
+    border: none;
+}
+.payment
+{
+    display: flex;
+    justify-content: space-between;
+   
+    
+}
+.payment p
+{
+    margin-bottom: 0;
+    height: 40px;
+
+    padding-top: 8px;
+    margin-right: 20px;
+}
+.payment .cash
+{
+    display: flex;
+    gap: 5rem;
+}
+
+.cash button
+{
+    background: wheat;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: .3s ease-in-out;
+}
+.cash button:hover
+{
+    background: rgba(245, 222, 179, 0.58);
+    color: rgb(8, 95, 72);
+}
+.book
+{
+    width: 100%;
+    height: 150px;
+    background: rgb(241, 243, 249);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.422);
+    padding: 30px 60px;
+}
+.bookTotal
+{
+    float: right;
+}
+.bookTotal .lt, .pdf, .tp
+{
+    display: flex;
+   
+    gap: 3rem;
+}
+
+.bookTotal .lt 
+{
+
+    gap: 6.5rem;
+}
+.bookTotal .tp
+{
+    gap: 6.1rem;
+}
+.bookTotal .tp input
+{
+    width: 100px;
+    border: none;
+    background-color: rgb(241, 243, 249);
+    color: #166465;
+}
+#priceTotal
+{
+    font-size: 30px;
+}
+
+.booking
+{
+    width: 100%;
+    height: 80px;
+    background: rgb(241, 243, 249);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 0 40px;
+}
+.booking button
+{
+    background: wheat;
+    border: none;
+    padding: 10px 40px;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: .3s ease-in-out;
+    margin-top: 20px;
+    float: right;
+}
+.booking button:hover
+{
+    background: rgba(245, 222, 179, 0.58);
+    color: rgb(8, 95, 72);
+}
+
+/*--------------------footer-------------------*/
+.footer
+{
+    padding: 40px 0 30px 0;
+    border-top: 5px solid;
+    border-color: #e89e3e;
+    background-color: #fff;
+    width: 100%;
+
+}
+.footer .col-sm-4 
+{
+    text-align: center;
+}
+.footer .col-sm-4 h5
+{
+    padding: 20px 0 10px 0;
+    font-size: 25px;
+}
+.footer .col-sm-4 p
+{
+    line-height: 0.5;
+}
+
+.footer .col-sm-4 img
+{
+    width: 300px;
+    margin: auto;
+}
+.footer .col-sm-4 .servicefooter
+{
+    padding-top: 60px;
+}
+.footer .col-sm-4 .term
+{
+    padding-top: 40px;
+    line-height: 0.5;
+}
+.footer .col-sm-4 .contactfooter img
+{
+    width: 70px;
+    padding-top: 20px;
+}
+@media screen and (max-width: 281px) 
+{
+    .footer .col-sm-4 img
+    {
+        width: 200px;
+    }
+}

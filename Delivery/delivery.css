@@ -1,0 +1,695 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+.bg-img
+{
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(to bottom, #0F8589 0%, wheat 150%);
+}
+
+@media screen and (max-width: 913px) 
+{
+    .bg-img
+    {
+        height: 100vh;
+    }
+}
+@media screen and (max-width: 541px) 
+{
+    .bg-img
+    {
+        height: auto;
+    }
+}
+/*-----------------------------------Navigation bar---------------------------------*/
+div.navar
+{
+    width: 100%;
+    height: 125px;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+}
+.hamburger 
+{
+    display: none;
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 20px 10px 0 0;
+    z-index: 2;
+}   
+.hamburger a
+{
+    color: white;
+}
+.hamburger a:hover
+{
+    color:#e18206 ;
+}
+.smhead{
+    width: 400px;
+    background-color: #ffff;
+    box-shadow: 3px 5px rgba(0 0 0 /0.2);
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    margin-right: 20px;
+    padding-left: 20px;
+}
+.smhead a
+{
+    text-decoration: none;
+    padding: 5px 5px;
+    color: black;
+    float: left;
+    padding-top: 6px;
+}
+.smhead a:hover
+{
+    color: #e89e3e;
+}
+.smhead img 
+{
+    width: 25px;
+    padding-top: 5px;
+    float: right;
+    margin-right: 20px; 
+}
+div.logo
+{
+    background-image: url("/LaundryWebsite/Index/images/logo.png") ;
+    border-radius: 4px;
+    background-size: 300px;
+    background-repeat: no-repeat;
+    margin-left: 30px;    
+    height: 200px;
+    filter: drop-shadow(5px 5px 5px #222);
+}
+#active
+{
+    text-decoration: underline;
+    color:wheat;
+    text-underline-offset: 15px;
+}
+.navigate ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding-top: 60px;
+    font-size: 20px; 
+    text-align: right;  
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+.navigate ul li 
+{ 
+    display: inline;
+    padding-left: 30px;  
+    padding-bottom: 10px;  
+}
+.navigate ul li a
+{
+    text-decoration: none;
+    color: #fff;
+    transition: .3s ease-in-out;
+}
+.navigate ul .fa-caret-down
+{
+   color: #fff;
+   padding-left: 10px;
+}
+.navigate ul li a:hover
+{
+    color: wheat;
+    text-decoration: underline;
+    text-underline-offset: 15px;
+}
+.pricing,
+.services,
+.delivery
+{
+    overflow: hidden;
+}
+.priceOffer,
+.serviceOffer,
+.deliveryOffer
+{
+    display: none;
+    position: absolute;
+    background-color: rgb(155, 106, 15);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.priceOffer
+{
+    right: 497px;
+    animation: growDown 300ms ease-in-out forwards;
+    transform-origin: top center;
+}
+@keyframes growDown 
+{
+    0% {transform: scaleY(0)}
+    80% {transform: scaleY(1.1)}
+    100% {transform: scaleY(1)}
+}
+.serviceOffer
+{
+    right: 348px;
+    animation: growDown2 300ms ease-in-out forwards;
+    transform-origin: top center;
+}
+@keyframes growDown2
+{
+    0% {transform: scaleY(0)}
+    80% {transform: scaleY(1.1)}
+    100% {transform: scaleY(1)}
+}
+.deliveryOffer
+{
+    right: 200px;
+    animation: growDown3 300ms ease-in-out forwards;
+    transform-origin: top center;
+}
+
+@keyframes growDown3
+{
+    0% {transform: scaleY(0)}
+    80% {transform: scaleY(1.1)}
+    100% {transform: scaleY(1)}
+}
+.priceOffer a,
+.serviceOffer a,
+.deliveryOffer a 
+{
+    float: none;
+    color: #000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.priceOffer a:hover,
+.serviceOffer a:hover,
+.deliveryOffer a:hover
+{
+    background-color:#26d9df;
+}
+.pricing:hover .priceOffer,
+.services:hover .serviceOffer,
+.delivery:hover .deliveryOffer
+{
+    display: block;
+}
+#signIn 
+{
+   background-color:  #e89e3e;
+   padding: 5px 40px 5px 50px;
+   margin-top: 15px;
+   border-top-left-radius: 25px;
+   border-bottom-left-radius: 25px;
+}
+#signIn:hover
+{
+    color: #0F8589;
+}
+#signIn .fa-user
+{
+    padding-right: 20px;
+}
+@media  screen and (max-width: 1184px)
+{
+    div.navar
+    {
+        height: 130px;
+        width: 100%;
+    }
+    .hamburger
+    {
+        display: block;
+    }
+    .navigate
+    {
+        background-color:  #08b5bb;
+        position: absolute;
+        right: 0;
+        height: 380px;
+        z-index: 1;
+        display: none;
+        width: 60%;
+    }
+    .navigate.active
+    {
+        display: block;
+    }
+    .navigate ul
+    {
+        padding-top: 50px;
+        position: relative;
+        right: 10px;
+    }
+    #signIn
+    {
+        border-radius: 25px;
+        padding-left: 50px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .navigate ul li 
+    {
+        display: block;
+        padding-top: 12px;
+    }
+    .smhead
+    {
+        display: none;
+    }
+    .priceOffer,
+    .serviceOffer,
+    .deliveryOffer
+    {
+        left: 430px;
+    }
+}
+@media  screen and (max-width: 1025px)
+{
+    .smhead
+    {
+        display: block;
+        position: absolute;
+        right: 60px;
+        backdrop-filter: blur(10px);
+        background-color: rgba(255, 255, 255, 0.123);
+    }
+}
+@media  screen and (max-width: 821px)
+{
+    .priceOffer,
+    .serviceOffer,
+    .deliveryOffer
+    {
+       left: 310px;
+    }
+}
+
+@media  screen and (max-width: 769px)
+{
+    .priceOffer,
+    .serviceOffer,
+    .deliveryOffer
+    {
+        left: 290px;
+    }
+}
+@media  screen and (max-width: 541px)
+{
+    .priceOffer,
+    .serviceOffer,
+    .deliveryOffer
+    {
+       left: 150px;
+    }
+    .smhead
+    {
+        width: 60%;
+        right: 80px;
+    }
+}
+@media  screen and (max-width: 415px)
+{
+    .navigate ul li a
+    {
+       font-size: 14px;
+    }
+    .priceOffer,
+    .serviceOffer,
+    .deliveryOffer
+    {
+        left: 70px;
+    }
+    #signIn
+    {
+        border-radius: 25px;
+        padding-left: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .smhead
+    {
+        width: 80%;
+        right: 30px;
+    }
+}
+@media  screen and (max-width: 395px)
+{
+    .smhead
+    {
+        width: 90%;
+        right: 30px;
+    }
+}
+@media  screen and (max-width: 281px)
+{
+    .navigate ul li a
+    {
+       font-size: 13px;
+    }
+    .priceOffer,
+    .serviceOffer,
+    .deliveryOffer
+    {
+        left: 20px;
+        min-width: 140px;
+    }
+    #signIn
+    {
+        border-radius: 25px;
+        padding: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
+@media  screen and (max-width: 281px)
+{
+    .navigate ul li a
+    {
+       font-size: 13px;
+    }
+    .priceOffer,
+    .serviceOffer,
+    .deliveryOffer
+    {
+        left: 20px;
+        min-width: 140px;
+    }
+    .navigate ul li 
+    {
+        padding-left: 30px;
+        padding-bottom: 0px;
+    }
+}
+.container-hd
+{
+    margin: 10%;
+    margin-top: 50px;
+}
+.homeDelivery
+{
+    width: 100%;
+    height: auto; 
+}
+.whoUs h1
+{
+    margin: auto;
+    padding-bottom: 15px;
+    border-bottom-style: solid;
+    border-bottom-width: 3.1px;
+    width: fit-content;
+    color: wheat;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+.whoUs p
+{
+    text-align: justify;
+    padding: 0 20px 10px 20px;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 70px;
+}
+.whoUs img
+{
+    width: 30%;
+    float: left;
+    margin-right: 50px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+.whoUs img:hover
+{
+    transform: scale(1.1);
+    box-shadow: rgba(238, 186, 75, 0.799) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+@media screen and (max-width: 1281px)
+{
+    .whoUs img
+    {
+        width: 20%;
+        margin-right: 30px;
+    }
+}
+@media screen and (max-width: 1025px)
+{
+    .whoUs h1
+    {
+        font-size: 30px;
+    }
+    .whoUs p
+    {
+        font-size: 15px;
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 913px)
+{
+    .whoUs h1
+    {
+        font-size: 40px;
+    }
+    .whoUs p
+    {
+        font-size: 20px;
+        margin-top: 30px;
+    }
+    .whoUs img
+    {
+        width: 30%;
+        margin-right: 30px;
+        margin-bottom: 3px;
+    }
+}
+@media screen and (max-width: 541px)
+{
+    .container-hd
+    {
+        margin: 0;
+    }
+    .whoUs h1
+    {
+        font-size: 30px;
+    }
+    .whoUs p
+    {
+        font-size: 14px;
+        padding-bottom: 30px;
+        margin-bottom: 0;
+    }
+    .whoUs img
+    {
+        width: 30%;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+}
+@media screen and (max-width: 415px)
+{
+    .whoUs h1
+    {
+        font-size: 20px;
+    }
+}
+/**/
+
+.hmDel
+{
+    width: 100%;
+    height: auto;
+    background-color: rgb(229, 229, 229);
+}
+.howItWorks 
+{
+    padding: 150px 0 20px;
+}
+.howItWorks h2
+{
+    margin: auto;
+    padding-bottom: 15px;
+    border-bottom-style: solid;
+    border-bottom-width: 3.1px;
+    width: fit-content;
+    color: rgb(28, 146, 144);
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.howWorks
+{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.flip
+{
+    margin-bottom: 100px;
+}
+.flip img
+{
+    width: 50%;
+    margin-bottom: 20px;
+    transition: 0.8s;
+}
+.flip img:hover
+{
+   transform: rotateY(180deg);
+}
+#wsmac
+{
+    width: 25%;
+}
+.howWorks p
+{
+    font-size: 18px;
+}
+.howWorks h6
+{
+    font-size: 23px;
+}
+@media screen and (max-width: 1281px)
+{
+    #wsmac
+    {
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 1025px)
+{
+    #wsmac
+    {
+        width: 35%;
+        margin-top: 5px;
+    }
+    .howWorks h6
+    {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 913px)
+{
+    .howItWorks h2
+    {
+        font-size: 40px;
+    }
+    .howWorks
+    {
+        display: block;
+    }
+    #wsmac
+    {
+        width: 60%;
+        margin: auto;
+    }
+    .howWorks p
+    {
+        font-size: 30px;
+    }
+    .howWorks h6
+    {
+        font-size: 40px;
+        margin-bottom: 0;
+    }
+    .flip
+    {
+         margin-bottom: 0;
+         padding-bottom: 100px;
+    }
+}
+@media screen and (max-width: 541px)
+{
+    .howItWorks h2
+    {
+        font-size: 25px;
+    }
+    .flip img
+    {
+        width: 40%;
+    }
+    .howWorks h6
+    {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 415px)
+{
+    .howItWorks h2
+    {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 395px)
+{
+    .howWorks h6
+    {
+        font-size: 25px;
+    }
+    .howWorks p
+    {
+        font-size: 20px;
+    }
+}
+/*--------------------footer-------------------*/
+.footer
+{
+    padding: 40px 0 30px 0;
+    border-top: 5px solid;
+    border-color: #e89e3e;
+    background-color: #fff;
+    width: 100%;
+
+}
+.footer .col-sm-4 
+{
+    text-align: center;
+}
+.footer .col-sm-4 h5
+{
+    padding: 20px 0 10px 0;
+    font-size: 25px;
+}
+.footer .col-sm-4 p
+{
+    line-height: 0.5;
+}
+
+.footer .col-sm-4 img
+{
+    width: 300px;
+    margin: auto;
+}
+.footer .col-sm-4 .servicefooter
+{
+    padding-top: 60px;
+}
+.footer .col-sm-4 .term
+{
+    padding-top: 40px;
+    line-height: 0.5;
+}
+.footer .col-sm-4 .contactfooter img
+{
+    width: 70px;
+    padding-top: 20px;
+}
+@media screen and (max-width: 281px) 
+{
+    .footer .col-sm-4 img
+    {
+        width: 200px;
+    }
+}
